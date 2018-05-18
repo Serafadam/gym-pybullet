@@ -61,6 +61,11 @@
 | jointMaxForce    | float  | Maximum force specified in URDF (possibly other file formats) Note that this value is not automatically used. You can use maxForce in 'setJointMotorControl2'.                                                                |
 | jointMaxVelocity | float  | Maximum velocity specified in URDF. Note that the maximum velocity is not used in actual motor control commands at the moment.                                                                                                |
 | linkName         | string | the name of the link, as specified in the URDF (or SDF etc.) file                                                                                                                                                             |
+| jointAxis        | vec3   | joint axis in local frame (ignored for JOINT_FIXED)         |
+| parentFramePos   | vec3   | joint position in parent frame                              |
+| parentFrameOrn   | vec3   | joint orientation in parent frame                           |
+| parentIndex      | int    | parent link index, -1 for base                              |
+                                                                          
 ```
 [(0,b'world_joint', 4, -1, -1, 0, 0.0, 0.0, 0.0, -1.0, 0.0, 0.0, b'base_link', (0.0, 0.0, 0.0), (0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 1.0), -1),
  (1, b'shoulder_pan_joint', 0, 7, 6, 1, 0.0, 0.0, -6.283185307179586, 6.283185307179586, 150.0, 3.15, b'shoulder_link', (0.0, 0.0, 1.0), (0.0, 0.0, 0.08915899693965912), (0.0, 0.0, 0.0, 1.0), 0),
