@@ -16,7 +16,7 @@
 
     This is a repository created for funzies to try different RL techniques using an UR5 robot (at this moment).
     
-    So far, basic work has been done in setting up the environmen. The test.py file in `examples` folder runs a basic loop, and gets state, reward and done info. I've written the initial UR5 reach environment in the most simple way possible for now to start any kind of loop.
+    So far, basic work has been done in setting up the environment. The test.py file in `examples` folder runs a basic loop, and gets state, reward and done info. I've written the initial UR5 reach environment in the most simple way possible for now to start any kind of loop.
 
 2. Installation
 
